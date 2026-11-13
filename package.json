@@ -1,15 +1,14 @@
 {
   "private": true,
   "scripts": {
-      "dev": "npm run development",
-      "development": "mix",
-      "watch": "mix watch",
-      "watch-poll": "mix watch -- --watch-options-poll=1000",
-      "hot": "mix watch --hot",
-      "prod": "npm run production",
-      "production": "mix --production"
+    "dev": "vite build --watch --minify false",
+    "development": "vite build --minify false",
+    "watch": "vite build --watch --minify false",
+    "prod": "vite build",
+    "production": "vite build",
+    "build": "vite build"
   },
   "devDependencies": {
-      "laravel-mix": "^6.0.6"
+    "vite": "^8.3.8"
   }
 }
